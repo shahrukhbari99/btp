@@ -1,5 +1,5 @@
-var RentableObjects = artifacts.require("./RentableObjects.sol");
+var SimpleStorage = artifacts.require("./SimpleStorage.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(RentableObjects);
+  deployer.deploy(SimpleStorage);
 };
