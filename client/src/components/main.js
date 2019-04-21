@@ -12,7 +12,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Rental from './contracts/RentableObjects.json'
+import Rental from '../contracts/RentableObjects.json'
+import getWeb3 from "../utils/getWeb3";
 
 const styles = {
     card: {
@@ -56,7 +57,7 @@ class Main extends React.Component {
           // Set web3, accounts, and contract to the state, and then proceed with an
           // example of interacting with the contract's methods.
           this.setState({ web3, accounts, contract: instance });
-          this.getCourseMethod();
+          //this.registerObject();
         } catch (error) {
           // Catch any errors for any of the above operations.
           alert(
@@ -82,7 +83,7 @@ class Main extends React.Component {
     submit = ()   => {
 
         const {textname} = this.state;
-        con
+        
 
 
     }
