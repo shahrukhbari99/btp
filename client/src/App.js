@@ -4,8 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import Main from './components/main'
 
-  // import Rental frpm './contracts/RentableObjects.json'
+// import Rental frpm './contracts/RentableObjects.json'
 
 
 const styles = {
@@ -15,7 +16,8 @@ const styles = {
 
   appbar: {
     alignItems: 'center',
-    height:100,
+    height:80,
+    color: 'primary'
   },
 
   title: {
@@ -31,12 +33,13 @@ function SimpleAppBar(props) {
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.appbar}>
-        <Toolbar variant="dense" color='#1e88e5' container>
+        <Toolbar variant="dense" container>
           <Typography variant="h5" color="inherit" className={classes.title}>
             Rental Services
           </Typography>
         </Toolbar>
       </AppBar>
+      <Main/>
     </div>
   );
 }
