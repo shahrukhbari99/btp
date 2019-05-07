@@ -719,15 +719,15 @@ class Main extends React.Component {
                   Rent the Object
                   </Typography> */}
                   <Typography variant="h5" component="h2">
-                  Reclaim Object
+                  Return Object
                   </Typography>
                   <br></br>
                   <Typography className={classes.pos} color="textSecondary">
-                  Click below button to reclaim the object
+                  Click below button to return the object
                   </Typography>
                   </CardContent>
                   <Button className={classes.button} onClick={this.openForm7}>
-                    RECLAIM
+                    RETURN
                   </Button>
                 </Card>
                 </Grid>
